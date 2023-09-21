@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Bootstrap - Batch 13c</title>
+    <link rel="stylesheet" href="bootstrap3.min.css">
+    <link rel="stylesheet" href="bootstrap3-theme.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        table.table th {
+            text-align: center;
+        }
+        .hacktiv8-logo {
+            background-color: aquamarine;
+        }
+        .hacktiv8-logo .img-thumbnail {
+            width: 50%;
+        }
+        .tac {
+            text-align: center;
+            background-color: blue;
+            border: solid 1px white;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jumbotron</h1>
+        <div class="jumbotron">
+            <h1>Belajar HTML + Bootstrap Hacktiv8</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias aspernatur omnis esse iste quos velit? Laborum modi animi suscipit, odio perferendis ab at ad explicabo, deleniti nulla id dolores!
+            </p>
+            <button class="btn btn-primary">Lanjutkan</button>
+            <button class="btn btn-danger">Pelajari Selengkapnya</button>
+        </div>
+
+        <div class="row">
+            <h1>Table</h1>
+            <div class="col-12">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nama Makanan</th>
+                            <th>Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Baso</td>
+                            <td>10.000</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Mie Ayam</td>
+                            <td>10.000</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Mie Ayam + Baso</td>
+                            <td>13.000</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Kebab</td>
+                            <td>12.000</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Bubur Ayam</td>
+                            <td>10.000</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Bubur Kacang + Ketan Hitam</td>
+                            <td>10.000</td>
+                        </tr>   
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <h1>Image</h1>
+            <div class="col-12 hacktiv8-logo">
+                <img src="https://statics.hacktiv8.com/images/logo/hacktiv8-light.webp" alt="Logo Hacktiv8" class="img-thumbnail" />
+            </div>
+        </div>
+
+        <div class="row">
+            <h1>Button</h1>
+            <!-- standard / medium button -->
+            <div class="col-12">
+                <button class="btn btn-primary">Tombol 1</button>
+                <button class="btn btn-md btn-danger">Tombol 2</button>
+                <button class="btn btn-warning">Tombol 3</button>
+                <button class="btn btn-success">Tombol 4</button>
+                <button class="btn btn-info">Tombol 5</button>
+                <button class="btn btn-secondary">Tombol 6</button>
+                <button class="btn btn-link">Tombol 7</button>
+            </div>
+
+            <!-- large button -->
+            <div class="col-12">
+                <button class="btn btn-lg btn-primary">Tombol 1</button>
+                <button class="btn btn-lg btn-danger">Tombol 2</button>
+                <button class="btn btn-lg btn-warning">Tombol 3</button>
+                <button class="btn btn-lg btn-success">Tombol 4</button>
+                <button class="btn btn-lg btn-info">Tombol 5</button>
+                <button class="btn btn-lg btn-secondary">Tombol 6</button>
+                <button class="btn btn-lg btn-link">Tombol 7</button>
+            </div>
+
+            <!-- small button -->
+            <div class="col-12">
+                <button class="btn btn-sm btn-primary">Tombol 1</button>
+                <button class="btn btn-sm btn-danger">Tombol 2</button>
+                <button class="btn btn-sm btn-warning">Tombol 3</button>
+                <button class="btn btn-sm btn-success">Tombol 4</button>
+                <button class="btn btn-sm btn-info">Tombol 5</button>
+                <button class="btn btn-sm btn-secondary">Tombol 6</button>
+                <button class="btn btn-sm btn-link">Tombol 7</button>
+            </div>
+            
+            <!-- extra small button -->
+            <div class="col-12">
+                <button class="btn btn-xs btn-primary">Tombol 1</button>
+                <button class="btn btn-xs btn-danger">Tombol 2</button>
+                <button class="btn btn-xs btn-warning">Tombol 3</button>
+                <button class="btn btn-xs btn-success">Tombol 4</button>
+                <button class="btn btn-xs btn-info">Tombol 5</button>
+                <button class="btn btn-xs btn-secondary">Tombol 6</button>
+                <button class="btn btn-xs btn-link">Tombol 7</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <h1>Alert</h1>
+            <div class="col-md-6">
+                <div class="alert alert-success fade-in">
+                    Selamat. Anda berhasil menyimpan data.
+                </div>
+
+                <div class="alert alert-danger">
+                    Mohon maaf. Email sudah terdaftar.
+                </div>
+
+                <div class="alert alert-warning">
+                    Password minimal 8 karakter.
+                </div>
+
+                <div class="alert alert-info">
+                    Peserta Kelas Kampus Merdeka wajib mengikuti online class session.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="alert alert-success fade-in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    Data berhasil disimpan!
+                </div>
+
+                <div class="alert alert-danger fade-in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    Data gagal disimpan!
+                </div>
+
+                <div class="alert alert-warning">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    Mohon gunakan kombinasi angka, huruf, dan karakter untuk Password Anda!
+                </div>
+
+                <div class="alert alert-info">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    Ujian ini dimulai tepat pukul 12.00 WIB
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h1>Pagination</h1>
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul> <br/>
+            
+            <ul class="pagination pagination-lg">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul> <br/>
+
+            <ul class="pagination pagination-sm">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <h1>Breadcrumb</h1>
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tutorial</a></li>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Membuat Breadcrumb dengan Bootstrap</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <h1>Membuat List - Listgroup</h1>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">Baju</a></li>
+                <li class="list-group-item"><a href="#">Celana</a></li>
+                <li class="list-group-item"><a href="#">Sepatu</a></li>
+                <li class="list-group-item"><a href="#">Jaket</a></li>
+                <li class="list-group-item"><a href="#">Sandal</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <h1>Panel</h1>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <b>Panel Default</b>
+                    </div>
+                    <div class="panel-body">
+                        Membuat Panel Default dengan Bootstrap
+                    </div>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <b>Panel Success</b>
+                    </div>
+                    <div class="panel-body">
+                        Membuat Panel Success dengan Bootstrap
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <b>Panel Info</b>
+                    </div>
+                    <div class="panel-body">
+                        Membuat Panel Info dengan Bootstrap
+                    </div>
+                </div>
+    
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <b>Panel Warning</b>
+                    </div>
+                    <div class="panel-body">
+                        Membuat Panel Warning dengan Bootstrap
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <b>Panel Danger</b>
+                    </div>
+                    <div class="panel-body">
+                        Membuat Panel Danger dengan Bootstrap
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h1>Membuat Navigasi Tabs Bootstrap</h1>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#home">Home</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#menu1">Menu 1</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#menu2">Menu 2</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade-in active">
+                    <h3>Home</h3>
+                    <p>Ini isi home</p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Ini isi menu 1</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Ini isi menu 2</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <h1>Membuat Navigasi Pills Bootstrap</h1>
+            <ul class="nav nav-pills">
+                <li class="active">
+                    <a data-toggle="tab" href="#home2">Home</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#menu3">Menu 3</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#menu4">Menu 4</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home2" class="tab-pane fade-in active">
+                    <h3>Home 2</h3>
+                    <p>Ini isi home 2</p>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Menu 3</h3>
+                    <p>Ini isi menu 3</p>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                    <h3>Menu 4</h3>
+                    <p>Ini isi menu 4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h1><i class="fa fa-commenting"></i> Form</h1>
+            <form action="" class="form-horizontal">
+                <div class="form-group">
+                    <label for="nama" class="control-label col-sm-2">Nama Anda: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="nama" name="nama" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat" class="control-label col-sm-2">Alamat Anda: </label>
+                    <div class="col-sm-10">
+                        <textarea name="alamat" id="alamat" cols="30" rows="5" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button>
+            </form>
+        </div>
+
+        <div class="row">
+            <h1>Grid System Bootstrap</h1>
+
+            <div class="tac col-md-12">col-md-12</div>
+
+            <div class="tac col-md-6">col-md-6</div>
+            <div class="tac col-md-6">col-md-6</div>
+            
+            <div class="tac col-md-4">col-md-4</div>
+            <div class="tac col-md-4">col-md-4</div>
+            <div class="tac col-md-4">col-md-4</div>
+            
+            <div class="tac col-md-3">col-md-3</div>
+            <div class="tac col-md-3">col-md-3</div>
+            <div class="tac col-md-3">col-md-3</div>
+            <div class="tac col-md-3">col-md-3</div>
+            
+            <div class="tac col-md-2">col-md-2</div>
+            <div class="tac col-md-2">col-md-2</div>
+            <div class="tac col-md-2">col-md-2</div>
+            <div class="tac col-md-2">col-md-2</div>
+            <div class="tac col-md-2">col-md-2</div>
+            <div class="tac col-md-2">col-md-2</div>
+            
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+            <div class="tac col-md-1">col-md-1</div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="bootstrap3.min.js"></script>
+</body>
+</html>
