@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concat / Menggabungkan String</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            Concat String / Menggabungkan String:
+
+            let salam = "Selamat datang";
+            let nama = "Rizki Cahyana";
+
+            Cara concat:
+            1. simbol +
+                format: string1 + " " + string2;
+                contoh: 
+                    let gabungan = salam + " " + nama; // Selamat datang Rizki Cahyana
+
+            2. literal template / literal string    =>  simbol `` (back tick) 
+                format: `${string1} ${string2}`;
+                contoh: 
+                    let gabungan = `${salam} ${nama}`;
+        */      
+
+        let salam = "Selamat datang";
+        let nama = "Rizki Cahyana";
+        let tempat = "Hacktiv8 Class!";
+        let gabungan = salam + " " + nama + " di " + tempat; // Selamat datang Rizki Cahyana
+
+        console.log(gabungan);
+
+        let gabungan2 = `${salam} ${nama} di ${tempat}`;
+        console.log(gabungan2);
+
+    </script>
+
+</body>
+</html>

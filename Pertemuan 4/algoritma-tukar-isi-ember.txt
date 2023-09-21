@@ -1,0 +1,45 @@
+Diberikan 2 buah ember A dan B, ember A berisi larutan berwarna merah, ember B berisi larutan berwarna biru. Tukarkan isi kedua ember itu sedemikian  sehingga ember A berisi larutan warna biru dan ember B berisi larutan berwarna merah.
+
+======================================================================
+2 ember
+A berwarna "merah"
+B berwarna "biru"
+Tukar kedua ember sehingga A berwarna "biru" dan B berwarna "merah"
+
+Supaya logis, kita butuh ember ke-3 ==> ember C (kondisi awal kosong)
+
+======================================================================
+
+A. Naratif / Deskriptif
+1. Mulai 
+2. Tuangkan larutan dari ember A ke ember C 
+3. Tuangkan larutan dari ember B ke ember A 
+4. Tuangkan larutan dari ember C ke ember B 
+5. Selesai 
+
+======================================================================
+B. Diagram Flowchart (Lihat ke drawio)
+
+
+======================================================================
+#   => komentar 
+//  => komentar 
+======================================================================
+
+C. Pseudo-code
+Algoritma_Tukar_Isi_Ember
+
+// deklarasi dan inisialisasi nilai (input)
+A, B, C : string 
+A <-- "merah"       // "merah" diberikan ke A; atau A diisi nilai "merah"
+B <-- "biru"
+C <-- ""
+
+// proses / implementasi
+C <-- A
+A <-- B
+B <-- C
+
+// output 
+print "A: " + A 
+print "B: " + B 

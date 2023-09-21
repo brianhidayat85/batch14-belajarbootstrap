@@ -1,0 +1,5 @@
+Algoritma Dasar / Flow / Aliran Program / Struktur kontrol program :
+1. Sequential   => beruntun / dari atas ke bawah 
+2. Conditional  => percabangan / pengkondisian
+3. Looping      => perulangan 
+

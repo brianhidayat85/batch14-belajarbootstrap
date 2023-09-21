@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #img-wrapper img {
+            width: 200px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            padding: 0.25em 0.5em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            background-color: orange;
+            align-items: center;
+            padding: 0 1em;
+            box-sizing: border-box;
+            position: fixed;
+            width: 100%;
+        }
+
+        .content {
+            min-height: 100vh;
+            padding: 130px 1em 20px;
+        }
+
+        #content-1 {
+            background-color: lightcoral;
+        }
+        #content-2 {
+            background-color: lightblue;
+        }
+        #content-3 {
+            background-color: lightgreen;
+        }
+        #content-4 {
+            background-color: lightslategray;
+        }
+        #content-5 {
+            background-color: lightseagreen;
+        }
+        #content-6 {
+            background-color: darkblue;
+            color: #fff;
+        }
+
+        .content h2 {
+            margin-top: 0;
+        }
+
+        #footer {
+            margin-top: auto;
+            background-color: black;
+            color: white;
+            padding: 0.5em 1em;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <section id="header">
+        <div id="img-wrapper">
+            <img src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/5332400363489/Hacktiv8-1a3839af-310a-4509-8a9b-bcf7bc3203e7.png?tr=q-60,c-at_max,w-720,h-1280&_src=imagekit" alt="Hacktiv8 Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#content-1">Menu 1</a></li>
+                <li><a href="#content-2">Menu 2</a></li>
+                <li><a href="#content-3">Menu 3</a></li>
+                <li><a href="#content-4">Menu 4</a></li>
+                <li><a href="#content-5">Menu 5</a></li>
+                <li><a href="#content-6">Menu 6</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="content-wrapper">
+        <div class="content" id="content-1">
+            <h2>Content 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita doloremque, corrupti voluptates debitis eum velit quod obcaecati rem. Autem corporis non nam molestias, commodi eligendi sint optio molestiae vel?</p>
+        </div>
+        <div class="content" id="content-2">
+            <h2>Content 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita doloremque, corrupti voluptates debitis eum velit quod obcaecati rem. Autem corporis non nam molestias, commodi eligendi sint optio molestiae vel?</p>
+        </div>
+        <div class="content" id="content-3">
+            <h2>Content 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita doloremque, corrupti voluptates debitis eum velit quod obcaecati rem. Autem corporis non nam molestias, commodi eligendi sint optio molestiae vel?</p>
+        </div>
+        <div class="content" id="content-4">
+            <h2>Content 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita doloremque, corrupti voluptates debitis eum velit quod obcaecati rem. Autem corporis non nam molestias, commodi eligendi sint optio molestiae vel?</p>
+        </div>
+        <div class="content" id="content-5">
+            <h2>Content 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita doloremque, corrupti voluptates debitis eum velit quod obcaecati rem. Autem corporis non nam molestias, commodi eligendi sint optio molestiae vel?</p>
+        </div>
+        <div class="content" id="content-6">
+            <h2>Content 6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita doloremque, corrupti voluptates debitis eum velit quod obcaecati rem. Autem corporis non nam molestias, commodi eligendi sint optio molestiae vel?</p>
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <p>&copy; 2023. Nama Anda. All Rights Reserved</p>
+    </section>
+
+</body>
+</html>

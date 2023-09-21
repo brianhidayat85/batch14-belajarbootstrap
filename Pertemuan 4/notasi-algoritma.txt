@@ -1,0 +1,5 @@
+Notasi Algoritma ==> 
+1. Naratif / Deskriptif         => disajikan dengan kalimat-kalimat narasi / deskripsi
+2. Diagram Alir / Flowchart     => disajikan dengan diagram alir / flowchart
+3. Pseudo-code / Kode semu      => disajikan dengan kode semu / bukan kode program sesungguhnya 
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <div id="hasil1"></div>
+    <div id="hasil2"></div>
+    <div id="hasil3"></div>
+
+    <script>
+        /*
+            function    => subprogram yang dapat digunakan kembali / reuse / berkali-kali
+
+            function tidak otomatis berjalan / running
+            function harus dipanggil agar dapat berjalan
+
+            cara memanggil function:
+            format: namafungsi();
+                    namafungsi(parameter);
+
+                    parameter   => nilai yang dilewatkan / diberikan / passing ke fungsi
+
+            prosedur / void         ==> tanpa keyword return
+            format:
+                function namafunction(parameter_jika_ada) {
+                    ...
+                }
+                
+            function         ==> dengan keyword return
+            format:
+                function namafunction(parameter_jika_ada) {
+                    ...
+                    return nilai
+                
+                }
+
+        */
+
+        // tanpa parameter
+        function salam () {
+            document.getElementById('hasil1').innerHTML = "Selamat datang di Kelas!";
+        }
+        
+        salam();
+        
+        // dengan parameter
+        function salamDenganParameter(nama){
+            document.getElementById('hasil2').innerHTML = "Selamat datang di Kelas, " + nama + "!";
+            
+        }
+
+        salamDenganParameter("Rizki");
+        
+        function penjumlahan(angka1, angka2) {
+            return angka1 + angka2;
+        }
+        
+        // memanggil fungsi penjumlahan dengan 2 buah parameter
+        document.getElementById('hasil3').innerHTML = penjumlahan(25.3, 14);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout</title>
+</head>
+<body>
+    
+    <h1>Selamat datang, Kawan!</h1>
+
+    <h2 id="jam"></h2>
+
+    <script>
+
+        // settimeout ==> mengeksekusi kode program setelah x milisecond
+
+        /*
+            format:
+                setTimeout(() => {
+                    ...
+                }, waktu_dalam_milidetik);
+        */
+
+        /*
+            asynchronous: 
+        */
+
+        // eksekusi setelah 3000 ms / 3 detik
+        setTimeout(() => {
+            const div = document.createElement('div');
+            div.innerHTML = "<p>Setelah 3 detik.. Welcome.. welcome.. </p>";
+            document.body.appendChild(div);
+        }, 3000); // 3000 milidetik = 3 detik
+
+        // eksekusi setelah 5000 ms / 5 detik
+        setTimeout(() => {
+            const div = document.createElement('div');
+            div.innerHTML = "<p>Setelah 5 detik.. Welcome.. welcome.. </p>";
+            document.body.appendChild(div);
+        }, 5000); // 5000 milidetik = 5 detik
+
+        let counter = 1;
+
+        // mengeksekusi kode 
+        let interval = setInterval(() => {
+            const p = document.createElement('p');
+            p.textContent = 'Halo Apa Kabar..?';
+            document.body.appendChild(p);
+
+            counter += 1;
+
+            if (counter > 5) {
+                clearInterval(interval); // menghentikan setinterval
+
+            }
+
+            
+        }, 1000);
+
+
+        setInterval(() => {
+
+            let date = new Date();
+            let jam = `0${date.getHours()}`.substr(-2);
+            let menit = `0${date.getMinutes()}`.substr(-2);;
+            let detik = `0${date.getSeconds()}`.substr(-2);;
+
+            document.getElementById('jam').innerHTML = `${jam}:${menit}:${detik}`;
+
+        }, 1000);
+
+    </script>
+
+</body>
+</html>

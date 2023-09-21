@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    <label for="kata_sakti">Kata Sakti: </label>
+    <input type="text" id="kata_sakti" required /><br/>
+    <label for="berapa_kali">Berapa Kali nih?: </label>
+    <input type="number" id="berapa_kali" required /><br/><br/>
+
+    <button onclick="cetakKataSakti();">Cetak Kata Sakti</button> <br/><br/>
+
+    <div id="hasil"></div>
+
+    <script>
+        function cetakKataSakti () {
+            // mendapatkan value / nilai dari formulir input text dengan id tertentu
+            let kata_sakti = document.getElementById('kata_sakti').value;
+            let berapa_kali = document.getElementById('berapa_kali').value;
+            let tampung = '';
+
+            for (let i = 1; i <= berapa_kali; i++) {
+                tampung = tampung + i + ". " + kata_sakti + '<br/>';
+            }
+
+            document.getElementById('hasil').innerHTML = tampung;
+
+        }
+
+    </script>
+
+</body>
+</html>

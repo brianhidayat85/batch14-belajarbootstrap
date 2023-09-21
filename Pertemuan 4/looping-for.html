@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping - For</title>
+</head>
+<body>
+    <h1>Looping dengan For</h1>
+
+    <div id="hasil"></div>
+
+    <script>
+        let tampung = "";
+        for (let i=1; i <= 100; i++) {
+            console.log("Saya berjanji tidak akan mengulanginya lagi");
+            tampung = tampung + i + ". " + "Saya berjanji tidak akan mengulanginya lagi<br/>"; 
+        }
+
+        document.getElementById('hasil').innerHTML = tampung;
+    </script>
+
+</body>
+</html>
